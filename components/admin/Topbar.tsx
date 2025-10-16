@@ -80,4 +80,3 @@ const TopBar = ({ title = "Dashboard" }: TopBarProps) => {
 };
 
 export default TopBar;
-

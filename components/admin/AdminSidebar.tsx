@@ -36,7 +36,6 @@ const menuItems = [
   { title: "Employers", url: "/admin/employers", icon: Users },
   { title: "Shops", url: "/admin/shops", icon: Store },
   { title: "Reports", url: "/admin/reports", icon: FileText },
-  { title: "Settings", url: "/admin/settings", icon: Settings },
 ];
 
 export function AdminSidebar() {

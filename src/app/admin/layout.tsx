@@ -1,6 +1,7 @@
 'use client'
 
 import { AdminSidebar } from '@/components/admin/AdminSidebar'
+import TopBar from '@/components/admin/TopBar'
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar'
 
 export default function AdminLayout({
@@ -12,6 +13,7 @@ export default function AdminLayout({
     <SidebarProvider>
       <AdminSidebar />
       <SidebarInset>
+        <TopBar />
         <main className="flex-1 p-4 lg:p-6 overflow-auto">
           {children}
         </main>
