@@ -13,7 +13,7 @@ export default function AdminDashboardPage() {
           <div className="flex items-center justify-between">
             <div className="space-y-1">
               <p className="text-sm font-medium text-muted-foreground">Total Sales</p>
-              <p className="text-2xl font-bold">$12,345</p>
+              <p className="text-2xl font-bold">₨1,234,500</p>
             </div>
           </div>
         </div>
@@ -22,7 +22,7 @@ export default function AdminDashboardPage() {
           <div className="flex items-center justify-between">
             <div className="space-y-1">
               <p className="text-sm font-medium text-muted-foreground">Total Profit</p>
-              <p className="text-2xl font-bold">$5,678</p>
+              <p className="text-2xl font-bold">₨567,800</p>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function AdminDashboardPage() {
           <div className="flex items-center justify-between">
             <div className="space-y-1">
               <p className="text-sm font-medium text-muted-foreground">Net Revenue</p>
-              <p className="text-2xl font-bold">$8,901</p>
+              <p className="text-2xl font-bold">₨890,100</p>
             </div>
           </div>
         </div>
