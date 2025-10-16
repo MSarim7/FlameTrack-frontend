@@ -23,13 +23,13 @@ export default function NotFound() {
       <Card className="w-full max-w-md text-center">
         <CardHeader>
           <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-destructive/10">
-            <div className="text-4xl">🚫</div>
+            <div className="text-4xl">📦</div>
           </div>
-          <CardTitle className="text-2xl font-bold">Page Not Found</CardTitle>
+          <CardTitle className="text-2xl font-bold">Stock Item Not Found</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <p className="text-muted-foreground">
-            The page you're looking for doesn't exist or has been moved.
+            The requested stock item was not found or has been removed.
           </p>
           <p className="text-sm text-muted-foreground">
             You'll be automatically redirected to the dashboard in a few seconds...
@@ -44,11 +44,11 @@ export default function NotFound() {
             </Button>
             <Button 
               variant="outline" 
-              onClick={() => router.back()}
+              onClick={() => router.push("/admin/stock")}
               className="w-full"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Go Back
+              Back to Stock
             </Button>
           </div>
         </CardContent>

@@ -169,7 +169,7 @@ export default function LoginPage() {
             {/* Demo Credentials Info */}
             <div className="bg-muted p-3 rounded-lg text-sm">
               <p className="font-medium mb-1">Demo Credentials:</p>
-              <p><strong>Admin:</strong> admin / admin123</p>
+              <p><strong>Admin:</strong> admin / 123456</p>
               <p><strong>Employer:</strong> employer / employer123</p>
             </div>
 

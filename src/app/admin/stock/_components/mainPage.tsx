@@ -429,16 +429,15 @@ const Stock = () => {
                       <TableCell className="text-sm text-slate-600 dark:text-slate-400">
                         {new Date(item.lastUpdated).toLocaleDateString()}
                       </TableCell>
-                      <TableCell className="text-center">
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="h-8 px-3 border-slate-200 dark:border-slate-700 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-200"
-                        >
-                          <Eye className="h-3.5 w-3.5 mr-1" />
-                          View
-                        </Button>
-                      </TableCell>
+                        <TableCell className="text-center">
+                          <Link
+                            href={`/admin/stock/${item.id}/view`}
+                            className="inline-flex items-center justify-center rounded-md border border-slate-200 dark:border-slate-700 bg-background px-3 py-1.5 text-sm font-medium hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-200"
+                          >
+                            <Eye className="h-3.5 w-3.5 mr-1" />
+                            View
+                          </Link>
+                        </TableCell>
                     </TableRow>
                   ))
                 )}
@@ -450,5 +449,4 @@ const Stock = () => {
     </div>
   );
 };
-
 export default Stock;
