@@ -10,7 +10,6 @@ export default function NotFound() {
   const router = useRouter();
 
   useEffect(() => {
-    // Auto redirect to dashboard after 3 seconds
     const timer = setTimeout(() => {
       router.push("/admin/dashboard");
     }, 3000);
