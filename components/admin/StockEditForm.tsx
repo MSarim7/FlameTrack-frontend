@@ -199,7 +199,7 @@ export default function StockEditForm({ stockItem }: StockEditFormProps) {
                   }
                 >
                   <SelectTrigger id="category" className={errors.category ? "border-destructive" : ""}>
-                    <SelectValue />
+                    <SelectValue placeholder="Select category" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="Meat">Meat</SelectItem>
@@ -227,7 +227,7 @@ export default function StockEditForm({ stockItem }: StockEditFormProps) {
                   }
                 >
                   <SelectTrigger id="unitType" className={errors.unitType ? "border-destructive" : ""}>
-                    <SelectValue />
+                    <SelectValue placeholder="Select unit type" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="kg">kg</SelectItem>
@@ -327,7 +327,7 @@ export default function StockEditForm({ stockItem }: StockEditFormProps) {
                   onValueChange={(value) => handleInputChange("shop", value)}
                 >
                   <SelectTrigger id="shop" className={errors.shop ? "border-destructive" : ""}>
-                    <SelectValue />
+                    <SelectValue placeholder="Select shop" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="Flaming Bun">Flaming Bun</SelectItem>
@@ -368,8 +368,8 @@ export default function StockEditForm({ stockItem }: StockEditFormProps) {
                   onChange={(e) =>
                     handleInputChange("purchaseDate", e.target.value)
                   }
-                  className={errors.purchaseDate ? "border-destructive" : ""}
-edit page added                />
+                  className={errors.purchaseDate ? "border-destructive" : ""}/>
+
                 {errors.purchaseDate && (
                   <p className="text-sm text-destructive">{errors.purchaseDate[0]}</p>
                 )}
