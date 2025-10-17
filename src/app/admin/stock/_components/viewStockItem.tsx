@@ -53,7 +53,7 @@ export default function ViewStockItem({ stockItem }: ViewStockItemProps) {
         
         <Button 
           onClick={() => router.push(`/admin/stock/${stockItem.id}/edit`)}
-          className="bg-gradient-to-r from-[#FF7123] to-red-500 hover:from-[#FF7123]/90 hover:to-red-500/90"
+          className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white"
         >
           <Edit className="mr-2 h-4 w-4" />
           Edit

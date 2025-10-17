@@ -310,7 +310,7 @@ const Stock = () => {
         </div>
         <Link 
           href="/admin/stock/add"
-          className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+          className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-4 py-2 text-sm font-medium transition-all"
         >
           <Plus className="h-4 w-4 mr-2" />
           Add Stock

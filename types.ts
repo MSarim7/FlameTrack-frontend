@@ -52,3 +52,20 @@ export interface Employer {
   status: "Active" | "Inactive"
   createdAt: string // ISO
 }
+
+export interface StockItem {
+  id: string
+  itemName: string
+  category: "Meat" | "Buns" | "Vegetables" | "Beverages" | "Condiments" | "Others"
+  description?: string
+  unitType: "kg" | "litre" | "pcs" | "box" | "packet"
+  quantity: number
+  costPrice: number
+  sellingPrice?: number
+  shop: ShopName
+  supplier?: string
+  purchaseDate: string // ISO
+  expiryDate?: string // ISO
+  notes?: string
+  lastUpdated: string // ISO
+}
