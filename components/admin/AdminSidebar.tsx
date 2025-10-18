@@ -30,12 +30,12 @@ import {
 const menuItems = [
   { title: "Dashboard", url: "/admin/dashboard", icon: LayoutDashboard },
   { title: "Stock", url: "/admin/stock", icon: Package },
-  { title: "Sales", url: "/admin/sales", icon: TrendingUp },
-  { title: "Expenses", url: "/admin/expenses", icon: Wallet },
-  { title: "Refunds", url: "/admin/refunds", icon: RotateCcw },
   { title: "Employers", url: "/admin/employers", icon: Users },
   { title: "Shops", url: "/admin/shops", icon: Store },
   { title: "Reports", url: "/admin/reports", icon: FileText },
+  { title: "Sales", url: "/admin/sales", icon: TrendingUp },
+  { title: "Expenses", url: "/admin/expenses", icon: Wallet },
+  { title: "Refunds", url: "/admin/refunds", icon: RotateCcw },
 ];
 
 export function AdminSidebar() {

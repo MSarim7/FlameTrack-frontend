@@ -46,18 +46,18 @@ export default function StockEditForm({ stockItem }: StockEditFormProps) {
   const { toast } = useToast();
 
   const [formData, setFormData] = useState<Partial<StockFormData>>({
-    itemName: "",
-    category: undefined,
-    description: "",
-    unitType: undefined,
-    quantity: "",
-    costPrice: "",
-    sellingPrice: "",
-    shop: undefined,
-    supplier: "",
-    purchaseDate: "",
-    expiryDate: "",
-    notes: "",
+    itemName: stockItem?.itemName || "",
+    category: stockItem?.category || undefined,
+    description: stockItem?.description || "",
+    unitType: stockItem?.unitType || undefined,
+    quantity: stockItem?.quantity?.toString() || "",
+    costPrice: stockItem?.costPrice?.toString() || "",
+    sellingPrice: "0",
+    shop: stockItem?.shop || undefined,
+    supplier: stockItem?.supplier || "",
+    purchaseDate: stockItem?.purchaseDate || "",
+    expiryDate: stockItem?.expiryDate || "",
+    notes: stockItem?.notes || "",
   });
 
   const [errors, setErrors] = useState<Record<string, string[]>>({});
@@ -193,12 +193,10 @@ export default function StockEditForm({ stockItem }: StockEditFormProps) {
                   Category <span className="text-destructive">*</span>
                 </Label>
                 <Select
-                  value={formData.category}
-                  onValueChange={(value) =>
-                    handleInputChange("category", value)
-                  }
+                  value={formData.category || ""}
+                  onValueChange={(value) => handleInputChange("category", value)}
                 >
-                  <SelectTrigger id="category" className={errors.category ? "border-destructive" : ""}>
+                  <SelectTrigger id="category" className={`w-full ${errors.category ? "border-destructive" : ""}`}>
                     <SelectValue placeholder="Select category" />
                   </SelectTrigger>
                   <SelectContent>
@@ -221,12 +219,10 @@ export default function StockEditForm({ stockItem }: StockEditFormProps) {
                   Unit Type <span className="text-destructive">*</span>
                 </Label>
                 <Select
-                  value={formData.unitType}
-                  onValueChange={(value) =>
-                    handleInputChange("unitType", value)
-                  }
+                  value={formData.unitType || ""}
+                  onValueChange={(value) => handleInputChange("unitType", value)}
                 >
-                  <SelectTrigger id="unitType" className={errors.unitType ? "border-destructive" : ""}>
+                  <SelectTrigger id="unitType" className={`w-full ${errors.unitType ? "border-destructive" : ""}`}>
                     <SelectValue placeholder="Select unit type" />
                   </SelectTrigger>
                   <SelectContent>
@@ -323,10 +319,10 @@ export default function StockEditForm({ stockItem }: StockEditFormProps) {
                   Shop <span className="text-destructive">*</span>
                 </Label>
                 <Select
-                  value={formData.shop}
+                  value={formData.shop || ""}
                   onValueChange={(value) => handleInputChange("shop", value)}
                 >
-                  <SelectTrigger id="shop" className={errors.shop ? "border-destructive" : ""}>
+                  <SelectTrigger id="shop" className={`w-full ${errors.shop ? "border-destructive" : ""}`}>
                     <SelectValue placeholder="Select shop" />
                   </SelectTrigger>
                   <SelectContent>

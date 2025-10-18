@@ -1,7 +1,7 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import StockEditForm, { StockItem } from "@/components/admin/StockEditForm";
+import StockEditForm, { StockItem } from "@/src/app/admin/stock/_components/StockEditForm";
 
 // Mock data - same as in mainPage.tsx
 const mockStockData: StockItem[] = [

@@ -34,7 +34,7 @@ export const mockEmployerData: Employer[] = [
     name: "Ali Khan",
     email: "ali@flamingbun.com",
     phone: "+92 301 1234567",
-    shop: "Flaming Bun",
+    shop: "Flaming Dough",
     role: "Cashier",
     dateJoined: "2025-09-05",
     status: "Active",
@@ -54,7 +54,7 @@ export const mockEmployerData: Employer[] = [
     name: "Fatima Sheikh",
     email: "fatima@flamingbun.com",
     phone: "+92 302 9876543",
-    shop: "Flaming Bun",
+    shop: "Flaming Dough",
     role: "Staff",
     dateJoined: "2025-08-15",
     status: "Active",
@@ -201,7 +201,7 @@ const EmployerManagement = () => {
               <div className="text-sm text-orange-600 dark:text-orange-400 font-medium">employees</div>
             </div>
             <p className="text-sm text-orange-600/70 dark:text-orange-400/70 mt-2 font-medium">
-              Flaming Bun location
+              Flaming Bun 
             </p>
             <div className="mt-3 flex items-center gap-2">
               <div className="h-1 bg-orange-200 dark:bg-orange-800 rounded-full flex-1 overflow-hidden">
@@ -229,7 +229,7 @@ const EmployerManagement = () => {
               <div className="text-sm text-pink-600 dark:text-pink-400 font-medium">employees</div>
             </div>
             <p className="text-sm text-pink-600/70 dark:text-pink-400/70 mt-2 font-medium">
-              Flaming Dough location
+              Flaming Dough 
             </p>
             <div className="mt-3 flex items-center gap-2">
               <div className="h-1 bg-pink-200 dark:bg-pink-800 rounded-full flex-1 overflow-hidden">
