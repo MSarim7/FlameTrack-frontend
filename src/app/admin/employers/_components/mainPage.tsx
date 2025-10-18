@@ -44,7 +44,7 @@ export const mockEmployerData: Employer[] = [
     name: "Ahmed Raza",
     email: "ahmed@flamingdough.com",
     phone: "+92 333 7654321",
-    shop: "Flaming Dough",
+    shop: "Flaming Bun",
     role: "Manager",
     dateJoined: "2025-09-10",
     status: "Active",
